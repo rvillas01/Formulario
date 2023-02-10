@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+</head>
+
+
+<form class="form">
+  <h2>CONTACT US</h2>
+  <p><label for="date">DateList</label> <input type="text" list="mylist">
+  <datalist id="mylist">
+    <option label="Cantabria" value="Cantabria"></option>
+    <option label="Madrid" value="Madrid"></option>
+    <option label="Barcelona" value="Barcelona"></option>
+    <option label="Burgos" value="Burgos"></option>
+    </datalist>
+  </p>
+  <p><label for="date">Caja de Texto</label></p>
+  <p><input type="name" placeholder="Escribe aqui algo" autofocus required autocomplete="on"  name="nombre" type="text"></input></p>
+  <p><label for="date">Contador 0-10</label></p>
+  <p ><input type="number" placeholder="What would you like to tell us.." max="10" min="0"></input></p>
+  <p><input type="file" multiple="multiple" placeholder="Inserta un archivo"></p>
+  <!--<p><label for="date">Password</label></p>
+  <p><input type="password" placeholder="Escribe tu Password" maxlength="8" required pattern="^\d[\w\W]{7,}[A-Z]$"></input></p>!-->
+  <p type="Password"><input  type="password" id="password" name="password" maxlength="8" required placeholder="Debe empezar por numero, tener 7 letras y acabar en mayus."  required pattern="^\d[\w\W]{7,}[A-Z]$" ></input></p>
+  <progress id="file" max="100" value="70"> 70% </progress>
+  <button>Send Message</button>
+  <div>
+   
+    <span class="fa fa-phone"></span>001 1023 567
+    <span class="fa fa-envelope-o"></span> contact@company.com
+  </div>
+</form>
+</html>
